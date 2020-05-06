@@ -1,0 +1,13 @@
+.mycontainer{
+	border: 1px solid black;
+	width: 75%;
+	margin: auto;
+}
+.game{
+	color: white;
+	height: 450px;
+	background: url('../images/blackjack.jpg') center center no-repeat;
+}
+.gamebutton{
+	background: url('../images/blackjack.jpg') bottom center no-repeat;
+}

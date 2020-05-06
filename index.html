@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="src/style.css">
+	</head>
+    <body >
+    		<div class=" text-center justify-content-center mycontainer">
+    			<h1> Black Jack </h1>
+    			<div class=" border border-dark">
+    				<h3><span id='result'>Let's Play</span></h3>
+    				<div class="game border border-dark" >
+    					<div class="row" style="height: 100%;">
+	    					<div class="col-6 border-right border-dark " style="height: 100%;">
+	    						<h1>My Score : <span id="myscore">0</span></h1>
+	    						<div class="d-flex  myarea flex-wrap justify-content-around" >
+	    							
+	    						</div>
+	    					</div>
+	    					<div class="col-6">
+	    						<h1 >Dealer Score : <span id="dealerscore">0</span></h1>
+	    						<div class=" botarea flex-wrap d-flex justify-content-around">
+	    							
+	    						</div>
+	    					</div>
+	    				</div>
+    			</div>
+    				<div class="gamebutton">
+    						<button class="btn btn-primary m-2 btn-lg " onclick="play('Me')">Play</button>
+    						<button class="btn btn-warning m-2 btn-lg " onclick="play('Dealer')" >Stand</button>
+    						<button class="btn btn-danger m-2 btn-lg"  onclick="deal()">Deal</button>
+    				</div>
+    				<div class="table-responsive">
+    					<table class="table table-sm text-center">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col-4">Win</th>
+						      <th scope="col-4">Drwa</th>
+						      <th scope="col-4">Loss</th>   
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td><span id="win">0</span></td>
+						      <td><span id="draw">0</span></td>
+						      <td><span id="loss">0</span></td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+					
+    		</div>	
+    				<audio class="losssound"><source src="sounds/aww.mp3" type=""></audio>
+					<audio class="winsound"><source src="sounds/cash.mp3" type=""></audio>
+					<audio class="cards"><source src="sounds/swish.m4a" type=""></audio>
+					<audio class="x"><source src="sounds/1.mp3" type=""></audio>
+		<script src="src/java.js"></script>
+    </body>
+</html>
